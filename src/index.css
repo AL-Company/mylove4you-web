@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  /* Background Colors */
+  --color-bg: 10 22 40;        /* #0a1628 - Azul escuro principal */
+  --color-bg-medium: 15 29 58; /* #0f1d3a - Azul médio */
+  --color-bg-light: 26 40 71;  /* #1a2847 - Azul mais claro */
+  --color-box: 15 29 58;       /* #0f1d3a */
+  --box-border: 30 41 59; 
+  --box-sd: 226 232 240 / 0.5;
+  
+  /* Text Colors */
+  --heading-1: 255 255 255;    /* Branco */
+  --heading-2: 243 244 246;    /* Cinza muito claro */
+  --heading-3: 209 213 219;    /* Cinza claro */
+  --text-muted: 156 163 175;   /* gray-400 */
+  
+  /* Pink/Rose Accent Colors */
+  --pink-200: 251 207 232;     /* Pink claro */
+  --pink-300: 249 168 212;     /* Pink médio claro */
+  --pink-400: 244 114 182;     /* Pink médio */
+  --pink-500: 236 72 153;      /* Pink forte */
+  --pink-600: 219 39 119;      /* Pink escuro */
+  
+  --rose-400: 251 113 133;     /* Rose médio */
+  --rose-500: 244 63 94;       /* Rose forte */
+  --rose-600: 225 29 72;       /* Rose escuro */
+  
+  --red-500: 239 68 68;        /* Vermelho */
+}
+
+@layer utilities {
+  /* Background Utilities */
+  .bg-body {
+    background-color: rgb(var(--color-bg));
+  }
+  
+  .bg-body-medium {
+    background-color: rgb(var(--color-bg-medium));
+  }
+  
+  .bg-body-light {
+    background-color: rgb(var(--color-bg-light));
+  }
+
+  .bg-box-bg {
+    background-color: rgb(var(--color-box));
+  }
+  
+  /* Gradient Backgrounds */
+  .bg-hero-gradient {
+    background: linear-gradient(to bottom right, 
+      rgb(var(--color-bg)), 
+      rgb(var(--color-bg-medium)), 
+      rgb(var(--color-bg-light))
+    );
+  }
+  
+  .bg-pink-gradient {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-500)), 
+      rgb(var(--rose-500))
+    );
+  }
+  
+  .bg-pink-gradient-hover {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-600)), 
+      rgb(var(--rose-600))
+    );
+  }
+  
+  .bg-title-gradient-1 {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-200)), 
+      rgb(var(--pink-300)), 
+      rgb(var(--rose-400))
+    );
+  }
+  
+  .bg-title-gradient-2 {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-400)), 
+      rgb(var(--rose-400)), 
+      rgb(var(--red-500))
+    );
+  }
+
+  /* Text Utilities */
+  .text-heading-1 {
+    color: rgb(var(--heading-1));
+  }
+
+  .text-heading-2 {
+    color: rgb(var(--heading-2));
+  }
+
+  .text-heading-3 {
+    color: rgb(var(--heading-3));
+  }
+  
+  .text-muted {
+    color: rgb(var(--text-muted));
+  }
+  
+  /* Pink/Rose Text Colors */
+  .text-pink-400 {
+    color: rgb(var(--pink-400));
+  }
+  
+  /* Gradient Text */
+  .text-gradient-1 {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-200)), 
+      rgb(var(--pink-300)), 
+      rgb(var(--rose-400))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .text-gradient-2 {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-400)), 
+      rgb(var(--rose-400)), 
+      rgb(var(--red-500))
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Button/CTA Colors - AGORA PINK! */
+  .bg-cta {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-500)), 
+      rgb(var(--rose-500))
+    );
+  }
+  
+  .bg-cta-hover {
+    background: linear-gradient(to right, 
+      rgb(var(--pink-600)), 
+      rgb(var(--rose-600))
+    );
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(var(--color-bg));
+}
