@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Create() {
+export default function Checkout() {
   const [formData, setFormData] = useState({
     plan: '1ano',
     name: '',
@@ -37,32 +37,9 @@ export default function Create() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Navbar */}
-      <nav className="border-b border-slate-700/50 bg-slate-900/80 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg flex items-center justify-center">
-                <span className="text-white text-xl">❤️</span>
-              </div>
-              <span className="text-white font-bold text-xl">LoveYuu</span>
-            </div>
-            <div className="flex items-center gap-6 text-sm">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Preços</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Perguntas Frequentes</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Como Fazer</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Blog</a>
-              <button className="px-4 py-2 bg-white text-slate-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                🇧🇷 PT
-              </button>
-              <button className="text-gray-300 hover:text-white transition-colors">usEN</button>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 pb-12 pt-24 ">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Side - Form */}
           <div>

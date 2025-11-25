@@ -50,7 +50,7 @@ export const Price = () => {
                         </ul>
 
                         {/* CTA Button */}
-                        <button className="w-full bg-pink-gradient hover:bg-pink-gradient-hover text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105">
+                        <button className="w-full bg-pink-gradient hover:bg-pink-gradient-hover text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105" >
                             Quero fazer meu site
                         </button>
                     </div>

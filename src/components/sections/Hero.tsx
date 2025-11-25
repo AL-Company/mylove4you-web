@@ -38,7 +38,7 @@ export const Hero = () => {
           {/* CTA Button */}
           <div className="pt-6">
             <a 
-              href="#cta"
+              href="/checkout"
               className="group relative inline-block px-8 py-4 bg-pink-gradient text-white text-lg font-semibold rounded-2xl shadow-lg shadow-pink-500/50 hover:shadow-pink-500/70 hover:scale-105 transition-all duration-300"
             >
               <span className="relative z-10">Quero fazer meu site</span>

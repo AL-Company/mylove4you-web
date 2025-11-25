@@ -31,7 +31,7 @@ export const Navbar = () => {
                         {navItems.map((item, key) => (<NavItem href={item.href} text={item.text} key={key} />))}
                     </ul>
                     <div className="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-border lg:border-0 px-6 lg:px-0">
-                        <BtnLink text="Começar Agora" href="#cta" className="" />
+                        <BtnLink text="Começar Agora" href="/checkout" className="" />
                     </div>
                 </div>
             </nav>
