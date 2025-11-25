@@ -1,28 +1,31 @@
-import { Container } from "../shared/Container";
-import logo from '../../assets/favicon.ico'
+import Container from "../shared/Container";
+import logo from "../../assets/favicon.ico";
 import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
 
 const navItems = [
-    { href: "#prices", text: "Preços" },
-    { href: "#questions", text: "Perguntas Frequentes" },
-    { href: "#howto", text: "Como Fazer" },
-    { href: "#about-us", text: "Sobre" },
+  { href: "#prices", text: "Preços" },
+  { href: "#questions", text: "Perguntas Frequentes" },
+  { href: "#howto", text: "Como Fazer" },
+  { href: "#about-us", text: "Sobre" },
 ];
 
-
 export const Navbar = () => {
-    return <header className="absolute inset-x-0 z-50 py-2 bg-body">
-        <Container>
-            <nav className="w-full flex justify-between gap-6 relative">
-                {/* Logo */}
-                <div className="min-w-max inline-flex items-center relative gap-3">
-                    <a href="/" className="relative flex itens-center gap-3">
-                        <img src={logo} alt="LoveU Logo" className="w-15 h-15"></img>
-                    </a>
-                    <div className="inline-flex text-lg font-semibold text-heading-1">LoveUU</div>
-                </div>
-                <div className="flex flex-col lg:flex-row w-full lg:justify-between
+  return (
+    <header className="absolute inset-x-0 z-50 py-2 bg-body">
+      <Container>
+        <nav className="w-full flex justify-between gap-6 relative">
+          {/* Logo */}
+          <div className="min-w-max inline-flex items-center relative gap-3">
+            <a href="/" className="relative flex itens-center gap-3">
+              <img src={logo} alt="LoveU Logo" className="w-15 h-15"></img>
+            </a>
+            <div className="inline-flex text-lg font-semibold text-heading-1">
+              LoveUU
+            </div>
+          </div>
+          <div
+            className="flex flex-col lg:flex-row w-full lg:justify-between
                  lg:items-center absolute top-full left-0 lg:static lg:top-0 bg-body
                  border-x border-x-box-border lg:border-x-0 lg:h-auto h-0 overflow-hidden">
 
@@ -37,4 +40,5 @@ export const Navbar = () => {
             </nav>
         </Container>
     </header>
-}
+  );
+};
