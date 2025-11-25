@@ -1,4 +1,4 @@
-import { Container } from "../shared/Container";
+import Container from "../shared/Container";
 
 export const Hero = () => {
   return (
@@ -8,13 +8,9 @@ export const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-4 max-w-4xl">
             <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
-              <span className="text-gradient-1">
-                Surpreenda
-              </span>
+              <span className="text-gradient-1">Surpreenda</span>
               <br />
-              <span className="text-gradient-2">
-                quem você ama
-              </span>
+              <span className="text-gradient-2">quem você ama</span>
             </h2>
           </div>
 
@@ -23,21 +19,21 @@ export const Hero = () => {
             <p className="text-lg sm:text-xl text-heading-3 leading-relaxed">
               Crie um contador dinâmico do tempo de relacionamento.
               <br />
-              Compartilhe com quem você ama e faça um{' '}
+              Compartilhe com quem você ama e faça um{" "}
               <span className="text-pink-400 font-semibold">
                 presente surpresa inesquecível
               </span>
               .
             </p>
             <p className="text-base sm:text-lg text-muted flex items-center justify-center gap-2">
-              Só apontar para o QR Code 
+              Só apontar para o QR Code
               <span className="text-2xl">💕</span>
             </p>
           </div>
 
           {/* CTA Button */}
           <div className="pt-6">
-            <a 
+            <a
               href="/checkout"
               className="group relative inline-block px-8 py-4 bg-pink-gradient text-white text-lg font-semibold rounded-2xl shadow-lg shadow-pink-500/50 hover:shadow-pink-500/70 hover:scale-105 transition-all duration-300"
             >
