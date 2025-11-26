@@ -10,7 +10,7 @@ export const NavItem = ({ href, text, ...props }: NavItemProps) => {
     <li {...props}>
       <a
         href={href}
-        className="duration-300 font-normal ease-linear hover: text-primary px-3"
+        className="px-3 text-sm font-medium text-heading-2 transition-colors duration-300 hover:text-gradient-primary"
       >
         {text}
       </a>
