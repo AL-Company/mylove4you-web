@@ -46,7 +46,7 @@ export const HowTo = () => {
         <div className="flex flex-col items-center gap-6 text-center">
           <p className="eyebrow">Em poucos cliques</p>
           <h2 className="font-display text-4xl text-heading-1 md:text-5xl">
-            Como criar seu site romântico
+            Como criar um site personalizado em qualquer ocasião
           </h2>
           <p className="max-w-3xl text-lg text-heading-3">
             Todo o processo acontece em minutos e você recebe tudo por e-mail
