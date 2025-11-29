@@ -77,7 +77,7 @@ export const Questions = () => {
                   }`}
                 >
                   <span
-                    className={`text-xl ${
+                    className={`text-xl h-[30px] ${
                       openIndex === index ? "text-pink-500" : "text-heading-3"
                     }`}
                   >

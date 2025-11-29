@@ -4,10 +4,10 @@ import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
 
 const navItems = [
-  { href: "#prices", text: "Preços" },
-  { href: "#questions", text: "Perguntas Frequentes" },
   { href: "#howto", text: "Como Fazer" },
+  { href: "#prices", text: "Preços" },
   { href: "#about-us", text: "Sobre" },
+  { href: "#questions", text: "Perguntas Frequentes" },
 ];
 
 export const Navbar = () => {

@@ -17,12 +17,11 @@ export const Hero = () => {
           <span className="text-gradient-primary">
             Eternize momentos especiais
           </span>{" "}
-          com um site personalizado e exclusivo
+          com um site personalizado em qualquer ocasião
         </h1>
         <p className="max-w-2xl text-lg text-heading-2 md:text-xl">
-          Gere um contador do relacionamento, adicione fotos estilo Ghibli,
-          escolha uma música especial e envie um QR Code para criar um momento
-          inesquecível.
+          Gere contadores, cartões, convites ou mensagens personalizadas.
+          Adicione fotos, escolha uma música e compartilhe por QR Code.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <BtnLink href="/checkout" size="lg">
