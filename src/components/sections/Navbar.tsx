@@ -7,7 +7,7 @@ function Navbar() {
         </a>
       </div>
 
-      <div className="flex gap-15">
+      <div className="flex gap-15 text-2xl font-bold">
         <a href="Produtos"><h2>Produtos</h2></a>
         <a href="Templates"><h2>Templates</h2></a>
         <a href="Preços"><h2>Preços</h2></a>
