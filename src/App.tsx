@@ -4,8 +4,8 @@ import Cards from './components/sections/CardsSection';
 
 function App()  {
   return (
-    <main className="max-w-[1240px] md:py-0 min-h-screen">
-      <div className="glass min-h-screen rounded-2xl py-8 px-20 shadow-lg">
+    <main className=" max-w-[1240px] md:py-0 min-h-screen">
+      <div className="glass min-h-screen rounded-2xl py-6 px-20 shadow-lg">
         <Navbar />
         <Hero />
         <Cards />
