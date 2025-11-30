@@ -1,56 +1,30 @@
-import Container from "../shared/Container";
-import { BtnLink } from "../shared/BtnLink";
-
-export const Hero = () => {
+function Hero() {
   return (
-    <section id="hero" className="relative overflow-hidden bg-hero-gradient">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-70"
-        aria-hidden="true"
-      >
-        <div className="absolute -top-24 left-10 h-72 w-72 rounded-full bg-pink-500/20 blur-[120px]" />
-        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-rose-500/20 blur-[150px]" />
+    <section id="hero" className="relative overflow-hidden bg-hero-gradient py-15">
+      <div className="flex justify-around items-center flex-1">
+        <div className="max-w-lg">
+          <h1 className="text-5xl font-bold mb-4">
+            Experiências<br></br>
+             Digitais que<br></br> Marcam Momentos
+          </h1>
+
+          <p className="text-base text-white/80 mb-6">
+            Cartes conbes, timelines e páginas comemorativas personalizadas.
+          </p>
+
+          <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-md transition">
+            Criar experiência
+          </button>
+        </div>
+
+        <div className="w-100 h-96 bg-amber-50 rounded-md overflow-hidden shadow-md">
+          <img
+            src="src/assets/image 1.jpg"
+            alt="Imagem decorativa"
+            className="w-full h-full object-cover rounded-xl"
+          />
+        </div>
       </div>
-      <Container className="relative flex min-h-[85vh] flex-col items-center justify-center gap-10 py-24 text-center lg:py-32">
-        <p className="eyebrow">Presente Digital</p>
-        <h1 className="font-display text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          <span className="text-gradient-primary">
-            Eternize momentos especiais
-          </span>{" "}
-          com um site personalizado em qualquer ocasião
-        </h1>
-        <p className="max-w-2xl text-lg text-heading-2 md:text-xl">
-          Gere contadores, cartões, convites ou mensagens personalizadas.
-          Adicione fotos, escolha uma música e compartilhe por QR Code.
-        </p>
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <BtnLink href="/checkout" size="lg">
-            Criar meu site agora
-          </BtnLink>
-          <BtnLink href="#prices" variant="outline" size="lg">
-            Ver planos
-          </BtnLink>
-        </div>
-        <div className="grid w-full gap-6 text-left md:grid-cols-3">
-          {[
-            { label: "Sites entregues", value: "2.100+" },
-            { label: "Avaliação média", value: "4.9/5" },
-            { label: "Entrega", value: "Até 5 minutos via e-mail" },
-          ].map((item) => (
-            <div
-              key={item.label}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur"
-            >
-              <p className="text-sm uppercase tracking-[0.3em] text-heading-3">
-                {item.label}
-              </p>
-              <p className="mt-2 text-2xl font-semibold text-heading-1">
-                {item.value}
-              </p>
-            </div>
-          ))}
-        </div>
-      </Container>
     </section>
   );
 }
