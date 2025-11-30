@@ -1,54 +1,58 @@
 import Container from "../shared/Container";
+import { BtnLink } from "../shared/BtnLink";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen bg-hero-gradient flex items-center justify-center pt-24 pb-16 relative overflow-hidden">
-      <Container>
-        <div className="flex flex-col items-center text-center space-y-3 relative z-10">
-          {/* Main Heading */}
-          <div className="space-y-4 max-w-4xl">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
-              <span className="text-gradient-1">Surpreenda</span>
-              <br />
-              <span className="text-gradient-2">quem você ama</span>
-            </h2>
-          </div>
-
-          {/* Description */}
-          <div className="max-w-2xl space-y-4">
-            <p className="text-lg sm:text-xl text-heading-3 leading-relaxed">
-              Crie um contador dinâmico do tempo de relacionamento.
-              <br />
-              Compartilhe com quem você ama e faça um{" "}
-              <span className="text-pink-400 font-semibold">
-                presente surpresa inesquecível
-              </span>
-              .
-            </p>
-            <p className="text-base sm:text-lg text-muted flex items-center justify-center gap-2">
-              Só apontar para o QR Code
-              <span className="text-2xl">💕</span>
-            </p>
-          </div>
-
-          {/* CTA Button */}
-          <div className="pt-6">
-            <a
-              href="/checkout"
-              className="group relative inline-block px-8 py-4 bg-pink-gradient text-white text-lg font-semibold rounded-2xl shadow-lg shadow-pink-500/50 hover:shadow-pink-500/70 hover:scale-105 transition-all duration-300"
-            >
-              <span className="relative z-10">Quero fazer meu site</span>
-              <div className="absolute inset-0 bg-pink-gradient-hover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
-          </div>
+    <section id="hero" className="relative overflow-hidden bg-hero-gradient">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-70"
+        aria-hidden="true"
+      >
+        <div className="absolute -top-24 left-10 h-72 w-72 rounded-full bg-pink-500/20 blur-[120px]" />
+        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-rose-500/20 blur-[150px]" />
+      </div>
+      <Container className="relative flex min-h-[85vh] flex-col items-center justify-center gap-10 py-24 text-center lg:py-32">
+        <p className="eyebrow">Presente Digital</p>
+        <h1 className="font-display text-4xl leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <span className="text-gradient-primary">
+            Eternize momentos especiais
+          </span>{" "}
+          com um site personalizado em qualquer ocasião
+        </h1>
+        <p className="max-w-2xl text-lg text-heading-2 md:text-xl">
+          Gere contadores, cartões, convites ou mensagens personalizadas.
+          Adicione fotos, escolha uma música e compartilhe por QR Code.
+        </p>
+        <div className="flex flex-col items-center gap-4 sm:flex-row">
+          <BtnLink href="/checkout" size="lg">
+            Criar meu site agora
+          </BtnLink>
+          <BtnLink href="#prices" variant="outline" size="lg">
+            Ver planos
+          </BtnLink>
         </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-pink-500/10 rounded-full blur-2xl"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-rose-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-pink-400/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 left-20 w-24 h-24 bg-rose-400/10 rounded-full blur-2xl"></div>
+        <div className="grid w-full gap-6 text-left md:grid-cols-3">
+          {[
+            { label: "Sites entregues", value: "2.100+" },
+            { label: "Avaliação média", value: "4.9/5" },
+            { label: "Entrega", value: "Até 5 minutos via e-mail" },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur"
+            >
+              <p className="text-sm uppercase tracking-[0.3em] text-heading-3">
+                {item.label}
+              </p>
+              <p className="mt-2 text-2xl font-semibold text-heading-1">
+                {item.value}
+              </p>
+            </div>
+          ))}
+        </div>
       </Container>
     </section>
   );
-};
+}
+
+export default Hero;
