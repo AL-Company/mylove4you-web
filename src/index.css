@@ -40,6 +40,12 @@
       padding: 2.5rem;
     }
   }
+  h2 {
+    font-family: "Poppins";
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
 }
 
 .bg-hero-gradient {
@@ -48,4 +54,6 @@
   backdrop-filter: blur(5px);
   border: 1px solid hsl(0 0% 100% / 0.2);
   border-radius: 1.3rem;
+
+  --surface-glass: 225 35% 18% / 0.75;
 }
