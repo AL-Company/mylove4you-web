@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section id="hero" className="mt-10 relative overflow-hidden bg-hero-gradient py-15 ">
+    <section id="hero" className="mt-5 relative overflow-hidden bg-hero-gradient py-15 ">
       <div className="flex justify-around items-center flex-1">
         <div className="max-w-lg">
           <h1 className="text-5xl font-bold mb-4">

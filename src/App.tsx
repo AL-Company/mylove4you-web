@@ -1,6 +1,7 @@
 import Navbar from './components/sections/Navbar';
 import Hero from './components/sections/Hero';
 import Cards from './components/sections/CardsSection';
+import Footer from './components/sections/Footer';
 
 function App()  {
   return (
@@ -9,6 +10,7 @@ function App()  {
         <Navbar />
         <Hero />
         <Cards />
+        <Footer />
       </div>
     </main>
   );
