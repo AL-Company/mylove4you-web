@@ -4,12 +4,13 @@
   --text-primary: #ffffff;
   --text-secundary: #f5f5f7;
   --rosa-magenta: #ff3e9d;
-  --rosa-claro: #ff6fbb;
+  --rosa-claro: #ff5fbb;
   --lavanda: #b46cff;
   --roxo-escuro: #6c3aff;
   --lilas-profundo: #4b1fb8;
   --dourado-pastel: #ffd27a;
   --laranja: #ff9966;
+  
 }
 
 @layer utilities {
@@ -22,7 +23,13 @@
 }
 
 @layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
+    
     font-family: "Poppins", sans-serif;
     background-image: url("background.png");
     background-size: cover;
@@ -39,6 +46,7 @@
     @media (min-width: 1024px) {
       padding: 2.5rem;
     }
+    
   }
   h2 {
     font-family: "Poppins";
