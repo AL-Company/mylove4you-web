@@ -109,48 +109,32 @@ function CardsSection() {
 
   return (
     <>
-      <div className="mt-16 flex flex-wrap justify-center items-center gap-7 px-5 rounded-xl text-center">
-        {categoryCards.map((card, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => {
-              return navigate(`/products`);
-            }}
-            className="focus:outline-none"
-          >
-            <Card
-              title={card.title}
-              gradient={card.gradient}
-              width={200}
-              height={150}
-            />
-          </button>
-        ))}
-      </div >
+      <section id="product" className="mt-5 relative overflow-hidden bg-hero-gradient py-15 ">
+        <a href="/#product" className="flex flex-center justify-center mt-auto"><h2>Produtos</h2></a>
+        <div className="mt-10 flex flex-wrap justify-center items-center gap-7 px-30 rounded-xl text-center">
+          {categoryCards.map((card, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => {
+                return navigate(`/products`);
+              }}
+              className="focus:outline-none"
+            >
+              <Card
+                title={card.title}
+                gradient={card.gradient}
+                width={200}
+                height={150}
+              />
+            </button>
+          ))}
+        </div >
+      </section>
 
       {/* {selectedIndex !== null && (
         <CategoryTemplates selectedIndex={selectedIndex} />
       )} */}
-
-      < h2 className="text-2xl font-bold mb-4 mt-8 text-grey" >
-        Gere textos interativas
-      </h2 >
-
-      <div className="rounded-2xl px-10 py-8 flex flex-col md:flex-row items-center justify-between
-                      bg-gradient-to-r from-[rgba(75,31,184,0.9)] via-[rgba(180,108,255,0.8)] to-[rgba(255,62,157,0.9)]
-                      shadow-lg">
-        <p className="text-xl max-w-xl">
-          Gere textos incríveis com IA em segundos.
-        </p>
-
-        <button
-          className="mt-6 md:mt-0 bg-pink-500 hover:bg-pink-600 text-white font-semibold
-                     py-3 px-8 rounded-full shadow-md transition cursor-pointer"
-        >
-          Gerar texto com IA
-        </button>
-      </div>
     </>
   );
 }
